@@ -47,8 +47,8 @@ const AudioPlayer = ({ audioURL }) => {
                 <button className="play-pause-button" onClick={togglePlayPause}>
                     {isPlaying ? <BsPauseFill /> : <BsPlayFill />}    
                 </button>
-                <div className="progress-bar-control" onClick={handleScrub}>
-                    <div className="progress-bar" style={{ width: `&${progress}%` }} />
+                <div className="progress-bar-container" onClick={handleScrub}>
+                    <div className="progress-bar" style={{ width: `$${progress}%` }} />
                 </div>
                 <input 
                     type="range"
